@@ -7,7 +7,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.0');
-  api.use('mrt:define');
+  api.use('mrt:define@0.10.0');
   api.use('underscore');
   api.addFiles('require-debug.js');
   if (api.export !== undefined) {
@@ -19,6 +19,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('require-debug');
+  api.use('asemenov:require-debug');
   api.addFiles('tests.js');
 });

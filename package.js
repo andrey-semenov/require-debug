@@ -1,8 +1,9 @@
 Package.describe({
   name: "asemenov:require-debug",
   summary: "Debugging wrapper for the require (define) package",
-  version: "0.0.1",
-  git: "http://github.com/andrey-semenov/require-debug.git"
+  version: "0.0.2",
+  git: "http://github.com/andrey-semenov/require-debug.git",
+  debugOnly: true
 });
 
 Package.onUse(function(api) {
@@ -19,6 +20,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('asemenov:require-debug');
+  api.use('mrt:define@0.10.0');
+  api.addFiles('require-debug.js');
   api.addFiles('tests.js');
 });

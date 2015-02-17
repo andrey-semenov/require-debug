@@ -20,6 +20,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('asemenov:require-debug');
+  api.use('mrt:define@0.10.0');
+  api.addFiles('require-debug.js');
   api.addFiles('tests.js');
 });

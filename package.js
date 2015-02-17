@@ -1,7 +1,7 @@
 Package.describe({
   name: "asemenov:require-debug",
   summary: "Debugging wrapper for the require (define) package",
-  version: "0.0.1",
+  version: "0.0.2",
   git: "http://github.com/andrey-semenov/require-debug.git",
   debugOnly: true
 });

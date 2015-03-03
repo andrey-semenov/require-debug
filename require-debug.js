@@ -18,6 +18,7 @@
       _required.push(deps);
     }    
     _defined.push(name);
+    body.moduleName = name;
     return define(name, deps, body);
   };
 

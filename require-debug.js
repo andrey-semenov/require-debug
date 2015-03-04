@@ -19,7 +19,7 @@
     }    
     _defined.push(name);
     var bodyWrapper = function() {
-      body.apply({__moduleName__: name}, Array.prototype.slice.call(arguments)); 
+      return body.apply({__moduleName__: name}, Array.prototype.slice.call(arguments)); 
     };
     return define(name, deps, bodyWrapper);
   };

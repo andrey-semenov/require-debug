@@ -18,8 +18,10 @@
       _required.push(deps);
     }    
     _defined.push(name);
-    body.moduleName = name;
-    return define(name, deps, body);
+    var bodyWrapper = function() {
+      body.apply({__moduleName__: name}, Array.prototype.slice.call(arguments)); 
+    };
+    return define(name, deps, bodyWrapper);
   };
 
   brokenDeps = function() {

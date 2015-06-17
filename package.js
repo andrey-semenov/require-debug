@@ -2,7 +2,7 @@ Package.describe({
   name: "asemenov:require-debug",
   summary: "Debugging wrapper for the require (define) package",
   version: "0.0.4",
-  git: "http://github.com/andrey-semenov/require-debug.git"
+  git: "http://github.com/andrey-semenov/meteor-require-debug.git"
 });
 
 Package.onUse(function(api) {
